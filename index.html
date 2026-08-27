@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vaishnavi Dhongade — AI &amp; Data Science Student</title>
+<meta name="description" content="Portfolio of Vaishnavi Dhongade, a second-year AI & Data Science student." />
+<link rel="preconnect" href="https://fonts.googlheapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="nav__logo" aria-label="Home">
+      <span class="nav__logo-mark">VD</span><span class="nav__logo-dot">.</span>
+    </a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#home" class="nav__link active-link" data-nav>Home</a>
+      <a href="#about" class="nav__link" data-nav>About</a>
+      <a href="#services" class="nav__link" data-nav>Services</a>
+      <a href="#contact" class="nav__link" data-nav>Contact</a>
+    </nav>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HOME / HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero__grid">
+    <div class="hero__copy" data-reveal>
+      <p class="eyebrow">// AI &amp; DATA SCIENCE — SECOND YEAR</p>
+      <h1 class="hero__title">
+        Turning raw data<br />into <span class="hero__rotator" id="rotator">decisions</span><span class="cursor">_</span>
+      </h1>
+      <p class="hero__sub">
+        I'm Vaishnavi— I build small machine learning models, clean messy datasets,
+        and design dashboards that make numbers easy to read. This site is itself
+        a mini project: hand-built with HTML, CSS and JavaScript.
+      </p>
+      <div class="hero__cta">
+        <a href="#services" class="btn btn--primary">View my work</a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+      <dl class="hero__stats">
+        <div><dt>4+</dt><dd>ML mini projects</dd></div>
+        <div><dt>3</dt><dd>Datasets cleaned end-to-end</dd></div>
+        <div><dt>1</dt><dd>Coffee-fuelled hackathon</dd></div>
+      </dl>
+    </div>
+
+    <div class="hero__art" data-reveal>
+      <svg id="netSvg" viewBox="0 0 360 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a neural network with connected nodes">
+        <!-- connections -->
+        <g id="netLines" stroke="var(--accent-blue)" stroke-width="1.5" opacity="0.85"></g>
+        <!-- nodes -->
+        <g id="netNodes"></g>
+      </svg>
+      <p class="hero__art-caption">input layer → hidden layer → output</p>
+    </div>
+  </div>
+  <div class="hero__scroll-cue" aria-hidden="true"><span></span></div>
+</section>
+
+<div class="tear" aria-hidden="true"></div>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="section-head" data-reveal>
+    <p class="eyebrow">01 — ABOUT</p>
+    <h2>The student behind the notebook</h2>
+  </div>
+
+  <div class="about__grid">
+    <div class="about__card" data-reveal>
+      <div class="avatar" aria-hidden="true">VD</div>
+      <h3>Vaishnavi Dhongade</h3>
+      <p class="about__role">B.Tech, Artificial Intelligence &amp; Data Science — Year 2</p>
+      <p class="about__quote">"I like problems that start as a spreadsheet and end as an insight."</p>
+    </div>
+
+    <div class="about__text" data-reveal>
+      <p>
+        I'm in my second year of an AI &amp; Data Science degree, currently splitting my time
+        between coursework in statistics, Python, and machine learning, and personal
+        projects where I try to apply that theory to real, slightly messy data.
+      </p>
+      <p>
+        I care about the unglamorous half of data science — cleaning, validating,
+        and documenting a dataset properly before a single model gets trained.
+        Outside of coursework, I contribute to a couple of open student projects
+        and I'm slowly building a habit of writing up what I learn.
+      </p>
+
+      <ul class="skills" aria-label="Skills">
+        <li style="--r:-2deg">Python</li>
+        <li style="--r:1.5deg">Pandas &amp; NumPy</li>
+        <li style="--r:-1deg">SQL</li>
+        <li style="--r:2deg">scikit-learn</li>
+        <li style="--r:-1.5deg">Data Visualization</li>
+        <li style="--r:1deg">Statistics</li>
+        <li style="--r:-2.5deg">Power BI</li>
+        <li style="--r:1.8deg">Git</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="tear" aria-hidden="true"></div>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="section-head" data-reveal>
+    <p class="eyebrow">02 — SERVICES</p>
+    <h2>What I can help with</h2>
+    <p class="section-sub">Mostly academic and project-scale work — the kind of thing a second-year data science student is well placed to do well.</p>
+  </div>
+
+  <div class="cards" id="cardsGrid">
+    <article class="card" data-reveal>
+      <div class="card__icon" aria-hidden="true">
+        <svg viewBox="0 0 40 40"><path d="M6 30 L14 18 L21 24 L34 8" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34" cy="8" r="2.5" fill="currentColor"/></svg>
+      </div>
+      <h3>Data Analysis</h3>
+      <p>Exploratory analysis on your dataset — cleaning, summary statistics, and clear charts that actually answer your question.</p>
+    </article>
+
+    <article class="card" data-reveal>
+      <div class="card__icon" aria-hidden="true">
+        <svg viewBox="0 0 40 40"><circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="2.5"/><circle cx="30" cy="10" r="4" stroke="currentColor" stroke-width="2.5"/><circle cx="20" cy="30" r="4" stroke="currentColor" stroke-width="2.5"/><path d="M13 12 L27 12 M12 14 L18 27 M28 14 L22 27" stroke="currentColor" stroke-width="2"/></svg>
+      </div>
+      <h3>ML Model Building</h3>
+      <p>Baseline classification and regression models in scikit-learn, with an honest write-up of what worked and what didn't.</p>
+    </article>
+
+    <article class="card" data-reveal>
+      <div class="card__icon" aria-hidden="true">
+        <svg viewBox="0 0 40 40"><rect x="6" y="20" width="6" height="14" stroke="currentColor" stroke-width="2.5" fill="none"/><rect x="17" y="12" width="6" height="22" stroke="currentColor" stroke-width="2.5" fill="none"/><rect x="28" y="6" width="6" height="28" stroke="currentColor" stroke-width="2.5" fill="none"/></svg>
+      </div>
+      <h3>Dashboards &amp; Viz</h3>
+      <p>Turning a static spreadsheet into a small interactive dashboard, in Power BI or a lightweight web chart.</p>
+    </article>
+
+    <article class="card" data-reveal>
+      <div class="card__icon" aria-hidden="true">
+        <svg viewBox="0 0 40 40"><rect x="7" y="5" width="26" height="30" rx="2" stroke="currentColor" stroke-width="2.5" fill="none"/><path d="M13 14 H27 M13 20 H27 M13 26 H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </div>
+      <h3>Project Support</h3>
+      <p>Help scoping a mini or major project — picking a dataset, framing the problem, and structuring the report.</p>
+    </article>
+  </div>
+</section>
+
+<div class="tear" aria-hidden="true"></div>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="contact__grid">
+    <div class="contact__info" data-reveal>
+      <p class="eyebrow">03 — CONTACT</p>
+      <h2>Let's talk data</h2>
+      <p class="section-sub">Have a project, a dataset, or just a question about AI/DS coursework? Send a note.</p>
+
+      <ul class="contact__list">
+        <li>
+          <span class="contact__label">Email</span>
+          <a href="mailto:vaishnavidhongade9133@example.edu">vaishnavidhongade9133@example.edu</a>
+        </li>
+        <li>
+          <span class="contact__label">Location</span>
+          <span>Satara, Maharashtra</span>
+        </li>
+        <li>
+          <span class="contact__label">Elsewhere</span>
+          <span class="contact__socials">
+            <a href="#" aria-label="GitHub profile">GitHub</a>
+            <a href="#" aria-label="LinkedIn profile">LinkedIn</a>
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <form class="contact__form" id="contactForm" data-reveal novalidate>
+      <p class="form__terminal-label">$ compose --message</p>
+
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" autocomplete="name" />
+        <span class="field__error" id="nameError" role="alert"></span>
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" autocomplete="email" />
+        <span class="field__error" id="emailError" role="alert"></span>
+      </div>
+
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+        <span class="field__error" id="messageError" role="alert"></span>
+      </div>
+
+      <button type="submit" class="btn btn--primary btn--block" id="submitBtn">
+        <span id="submitLabel">Run send() →</span>
+      </button>
+
+      <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span>Built by Vaishnavi Dhongade</span>
+    <span class="footer__dot">·</span>
+    <span>AI &amp; Data Science, Year 2</span>
+    <span class="footer__dot">·</span>
+    <span id="year"></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
